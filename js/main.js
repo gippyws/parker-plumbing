@@ -20,8 +20,10 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 90) {
             $('.nav-bar').addClass('sticky-top shadow');
+            $('#stickyLogo').removeClass('d-none').addClass('d-lg-flex');
         } else {
             $('.nav-bar').removeClass('sticky-top shadow');
+            $('#stickyLogo').removeClass('d-lg-flex').addClass('d-none');
         }
     });
     

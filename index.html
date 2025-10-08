@@ -81,6 +81,9 @@
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div id="stickyLogo" class="h-100 px-3 bg-white d-none align-items-center">
+                <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-height: 40px;">
+                </div>
                 <div class="navbar-nav me-auto">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
@@ -96,16 +99,16 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-secondary d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-secondary" style="width: 45px; height: 45px; border-radius: 50%; font-size: 1.5rem;">
                         <i class="fa fa-phone-alt text-primary"></i>
                     </div>
                     <div class="ms-3">
                         <span class="d-none d-md-block">
-                            <h5 class="m-0 text-secondary">0428 853 971</h5>
+                            <h5 class="m-0 text-light">0428 853 971</h5>
                         </span>
-                        <a href="tel:0428853971" class="text-decoration-none d-block d-md-none">
-                            <h5 class="m-0 text-secondary">0428 853 971</h5>
+                        <a href="tel:0428853971" class="text-light text-decoration-none d-block d-md-none">
+                            <h5 class="m-0 text-light">0428 853 971</h5>
                         </a>
                     </div>
                 </div>
@@ -114,21 +117,24 @@
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
+    <!-- Carousel Original Start
+    <div class="container-fluid p-0">
         <div class="owl-carousel header-carousel position-relative h-100">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(0, 0, 0, .4);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Plumbing & Repairing Services</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Efficient Residential Plumbing Services</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Plumbing & Repairing
+                                    Services</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Efficient Residential Plumbing
+                                    Services</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at
+                                    sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
                                 <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Get A Quote</a>
                             </div>
                         </div>
                     </div>
@@ -136,15 +142,19 @@
             </div>
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(0, 0, 0, .4);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Plumbing & Repairing Services</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Efficient Commercial Plumbing Services</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Plumbing & Repairing
+                                    Services</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Efficient Commercial Plumbing
+                                    Services</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at
+                                    sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
                                 <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Get A Quote</a>
                             </div>
                         </div>
                     </div>
@@ -152,102 +162,154 @@
             </div>
         </div>
     </div>
-    <!-- Carousel End -->
+    Carousel End -->
 
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid w-100 h-100" src="img/service-1.jpg" alt="">
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0">Residential Plumbing</h5>
-                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
-                    </div>
+
+    <!-- New Carousel Start -->
+<div class="container-fluid p-0 position-relative" style="max-height:500px;">
+    <!-- Static overlay content -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+        style="z-index:2; background: rgba(0,0,0,0.4);">
+        <div class="container carousel-border">
+            <div class="row justify-content-start">
+                <div class="col-10 col-lg-8">
+                    <h1 class="display-3 text-white animated slideInDown mb-4">Plumbing & Maintenance Services
+                    </h1>
+                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Over 15 years of experience plumbing in the local area.</p>
+                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                    <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Get A Quote</a>
                 </div>
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid w-100 h-100" src="img/service-2.jpg" alt="">
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0">Commercial Plumbing</h5>
-                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel with images only -->
+    <div class="owl-carousel header-carousel position-relative h-100" style="z-index:1;">
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+        </div>
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+</div>
+    <!-- New Carousel End -->
+
+
+<!-- Credentials Card Section Start -->
+<div class="container py-5">
+    <div class="row justify-content-center g-5">
+            <div class="col-md-4">
+                <div class="card bg-light shadow-sm border-0 text-center h-100 p-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="mb-3">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary" style="width:70px; height:70px;">
+                        <i class="fas fa-id-card fa-2x text-white"></i>
+                    </span>
                 </div>
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid w-100 h-100" src="img/service-3.jpg" alt="">
+                <h4 class="fw-bold text-dark mb-2">Licensed & Registered</h4>
+                <p class="text-muted mb-0">We are fully licensed and registered with the Building and Plumbing Commission (BPC), ensuring all work meets the highest standards.</p>
+            </div>
+        </div>
+            <div class="col-md-4">
+                <div class="card bg-light shadow-sm border-0 text-center h-100 p-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="mb-3">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary" style="width:70px; height:70px;">
+                        <i class="fas fa-shield-alt fa-2x text-white"></i>
+                    </span>
+                </div>
+                <h4 class="fw-bold text-dark mb-2">Fully Insured</h4>
+                <p class="text-muted mb-0">Our comprehensive insurance coverage protects your property and gives you peace of mind for every job we undertake.</p>
+            </div>
+        </div>
+            <div class="col-md-4">
+                <div class="card bg-light shadow-sm border-0 text-center h-100 p-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="mb-3">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary" style="width:70px; height:70px;">
+                        <i class="fas fa-thumbs-up fa-2x text-white"></i>
+                    </span>
+                </div>
+                <h4 class="fw-bold text-dark mb-2">Trusted through 15 Years of Experience</h4>
+                <p class="text-muted mb-0">With over 15 years of industry experience, our reputation is built on reliability, quality, and customer trust.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Credentials Card Section End -->
+
+        <!-- General Services Start -->
+        <div class="bg-light py-5">   
+                <div class="container-xxl">
+            <div class="container">
+                <div class="text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
+
+                    <h1 class="mb-5">Drainage to Roof and Anything in Between</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid w-100 h-100" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between bg-white p-4">
+                            <h5 class="text-truncate me-3 mb-0">Residential</h5>
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle" style="width: 38px; height: 38px;">
+                                <i class="fa fa-home text-white"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0">Emergency Servicing</h5>
-                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
+                    <div class="col-lg-3 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid w-100 h-100" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between bg-white p-4">
+                            <h5 class="text-truncate me-3 mb-0">Commercial</h5>
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle" style="width: 38px; height: 38px;">
+                                <i class="fa fa-building text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid w-100 h-100" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between bg-white p-4">
+                            <h5 class="text-truncate me-3 mb-0">Renovations</h5>
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle" style="width: 38px; height: 38px;">
+                                <i class="fa fa-wrench text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid w-100 h-100" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between bg-white p-4">
+                            <h5 class="text-truncate me-3 mb-0">New Builds</h5>
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle" style="width: 38px; height: 38px;">
+                                <i class="fa fa-hard-hat text-white"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
-
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase">About Us</h6>
-                    <h1 class="mb-4">We Are Trusted Plumbing Company Since 1990</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Residential & commercial plumbing</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Quality services at affordable prices</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Immediate 24/ 7 emergency services</p>
-                    <div class="bg-primary d-flex align-items-center p-4 mt-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt fa-2x text-primary"></i>
-                        </div>
-                        <div class="ms-3">
-                            <p class="fs-5 fw-medium mb-2 text-white">Emergency 24/7</p>
-                            <h3 class="m-0 text-secondary">+012 345 6789</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-4" style="min-height: 500px;">
-                    <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/about-1.jpg" style="object-fit: cover; padding: 0 0 50px 100px;" alt="">
-                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="img/about-2.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
+    <!-- General Services End -->
 
 
     <!-- Fact Start -->
     <div class="container-fluid fact bg-dark my-5 py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-6 text-center wow fadeIn" data-wow-delay="0.1s">
                     <i class="fa fa-check fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">15</h2>
                     <p class="text-white mb-0">Years Experience</p>
                 </div>
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                    <p class="text-white mb-0">Expert Technicians</p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-md-6 col-lg-6 text-center wow fadeIn" data-wow-delay="0.5s">
                     <i class="fa fa-users fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <h2 class="text-white mb-2">Countless</h2>
                     <p class="text-white mb-0">Satisfied Clients</p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <i class="fa fa-wrench fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                    <p class="text-white mb-0">Compleate Projects</p>
                 </div>
             </div>
         </div>
@@ -255,72 +317,134 @@
     <!-- Fact End -->
 
 
-    <!-- Service Start -->
-    <div class="container-fluid py-5 px-4 px-lg-0">
-        <div class="row g-0">
-            <div class="col-lg-3 d-none d-lg-flex">
-                <div class="d-flex align-items-center justify-content-center bg-primary w-100 h-100">
-                    <h1 class="display-3 text-white m-0" style="transform: rotate(-90deg);">15 Years Experience</h1>
-                </div>
+    <!-- Services Section Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Our Services</h6>
+                <h1 class="mb-5">Explore Our Plumbing Services</h1>
             </div>
-            <div class="col-md-12 col-lg-9">
-                <div class="ms-lg-5 ps-lg-5">
-                    <div class="text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="text-secondary text-uppercase">Our Services</h6>
-                        <h1 class="mb-5">Explore Our Services</h1>
+            <!-- Service Tabs Navigation -->
+            <ul class="nav nav-pills services-tab-nav justify-content-center mb-5 wow fadeInUp" id="services-tab" role="tablist" data-wow-delay="0.2s">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="renovations-tab" data-bs-toggle="pill" data-bs-target="#renovations" type="button" role="tab" aria-controls="renovations" aria-selected="true">Renovations</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="hot-water-tab" data-bs-toggle="pill" data-bs-target="#hot-water" type="button" role="tab" aria-controls="hot-water" aria-selected="false">Hot Water</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="roofing-tab" data-bs-toggle="pill" data-bs-target="#roofing" type="button" role="tab" aria-controls="roofing" aria-selected="false">Roofing</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="leaks-clogs-tab" data-bs-toggle="pill" data-bs-target="#leaks-clogs" type="button" role="tab" aria-controls="leaks-clogs" aria-selected="false">Leaks & Clogs</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="piping-tab" data-bs-toggle="pill" data-bs-target="#piping" type="button" role="tab" aria-controls="piping" aria-selected="false">Piping</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fixtures-tab" data-bs-toggle="pill" data-bs-target="#fixtures" type="button" role="tab" aria-controls="fixtures" aria-selected="false">Fixtures</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="meters-tab" data-bs-toggle="pill" data-bs-target="#meters" type="button" role="tab" aria-controls="meters" aria-selected="false">Meters</button>
+                </li>
+            </ul>
+            <!-- Service Tabs Content -->
+            <div class="tab-content wow fadeInUp" id="services-tab-content" data-wow-delay="0.3s">
+                <!-- Renovations -->
+                <div class="tab-pane fade show active" id="renovations" role="tabpanel" aria-labelledby="renovations-tab">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="Kitchen and Bathroom Renovations">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4">Kitchen, Bathroom & Laundry Renovations</h3>
+                            <p class="mb-4">Dreaming of a stunning new bathroom or modern kitchen? Renovations are our specialty. We transform spaces into beautiful, functional areas you’ll love, approaching every project with professional attention to detail.</p>
+                            <a href="contact.html" class="btn btn-primary py-3 px-5">Learn More</a>
+                        </div>
                     </div>
-                    <div class="owl-carousel service-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-light p-4">
-                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-water fa-2x text-primary"></i>
-                            </div>
-                            <h4 class="mb-3">Drain Repair</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Quality Service</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Customer Satisfaction</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Support 24/7</p>
-                            <a href="" class="btn bg-white text-primary w-100 mt-2">Read More<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                </div>
+                <!-- Hot Water -->
+                <div class="tab-pane fade" id="hot-water" role="tabpanel" aria-labelledby="hot-water-tab">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="Hot Water System Repair">
                         </div>
-                        <div class="bg-light p-4">
-                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-toilet fa-2x text-primary"></i>
-                            </div>
-                            <h4 class="mb-3">Toilet Pipe Repair</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Quality Service</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Customer Satisfaction</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Support 24/7</p>
-                            <a href="" class="btn bg-white text-primary w-100 mt-2">Read More<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4">Hot Water System Repair & Installation</h3>
+                            <p class="mb-4">Is your hot water unit failing or on its way out? We'll help you explore repair or replacement options to ensure you're never left in the cold. We handle all major brands and models with expert care.</p>
+                             <a href="contact.html" class="btn btn-primary py-3 px-5">Learn More</a>
                         </div>
-                        <div class="bg-light p-4">
-                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-shower fa-2x text-primary"></i>
-                            </div>
-                            <h4 class="mb-3">Sewer Line Repair</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Quality Service</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Customer Satisfaction</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Support 24/7</p>
-                            <a href="" class="btn bg-white text-primary w-100 mt-2">Read More<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                    </div>
+                </div>
+                <!-- Roofing -->
+                <div class="tab-pane fade" id="roofing" role="tabpanel" aria-labelledby="roofing-tab">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="Roofing and Stormwater">
                         </div>
-                        <div class="bg-light p-4">
-                            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-tint fa-2x text-primary"></i>
-                            </div>
-                            <h4 class="mb-3">Water Heater Repair</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Quality Service</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Customer Satisfaction</p>
-                            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Support 24/7</p>
-                            <a href="" class="btn bg-white text-primary w-100 mt-2">Read More<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4">Roofing & Stormwater Solutions</h3>
+                            <p class="mb-4">From a leaking roof to new gutters or a complete rainwater harvesting system, we handle all aspects of roofing and stormwater management to protect your home from the elements.</p>
+                             <a href="contact.html" class="btn btn-primary py-3 px-5">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Leaks & Clogs -->
+                <div class="tab-pane fade" id="leaks-clogs" role="tabpanel" aria-labelledby="leaks-clogs-tab">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="img/carousel-1.jpg" alt="Blocked Drains and Leaks">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4">Blocked Drains & Leak Repairs</h3>
+                            <p class="mb-4">Leaks and blockages are common frustrations. We quickly diagnose and resolve issues in sinks, toilets, showers, and sewer lines to get your home back to normal with minimal disruption.</p>
+                             <a href="contact.html" class="btn btn-primary py-3 px-5">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Piping -->
+                <div class="tab-pane fade" id="piping" role="tabpanel" aria-labelledby="piping-tab">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="img/carousel-2.jpg" alt="Water Piping and Taps">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4">Water Piping Repair & Installation</h3>
+                            <p class="mb-4">Hearing a shudder when you turn on the tap? Need a new garden tap installed in a more convenient place? We investigate and repair all piping issues, ensuring your water flows perfectly.</p>
+                             <a href="contact.html" class="btn btn-primary py-3 px-5">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fixtures -->
+                <div class="tab-pane fade" id="fixtures" role="tabpanel" aria-labelledby="fixtures-tab">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="img/about-1.jpg" alt="Fixture Installation">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4">Plumbing Fixture Installation</h3>
+                            <p class="mb-4">Thinking of upgrading your fixtures? From new gas appliances and stylish tap mixers to water purifiers, we provide expert installation for any plumbing fixture to enhance your home.</p>
+                             <a href="contact.html" class="btn btn-primary py-3 px-5">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Meters -->
+                <div class="tab-pane fade" id="meters" role="tabpanel" aria-labelledby="meters-tab">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="img/about-2.jpg" alt="Water and Gas Meters">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4">Water & Gas Meter Services</h3>
+                            <p class="mb-4">Having issues with your water or gas meter? Need to relocate it to prevent accidental damage? It happens, and we can help secure and protect your essential services safely and efficiently.</p>
+                             <a href="contact.html" class="btn btn-primary py-3 px-5">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
-
+    <!-- Services Section End -->
 
     <!-- Booking Start -->
     <div class="container-fluid my-5 px-0">
