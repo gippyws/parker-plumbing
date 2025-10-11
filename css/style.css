@@ -176,6 +176,42 @@
     }
 }
 
+/* Focal point helpers for carousel images */
+.obj-top {
+    object-position: 50% 0%;
+}
+
+.obj-bottom {
+    object-position: 50% 100%;
+}
+
+.obj-left {
+    object-position: 0% 50%;
+}
+
+.obj-right {
+    object-position: 100% 50%;
+}
+
+.obj-center {
+    object-position: 50% 50%; /* default */
+}
+
+@media (min-width: 769px) {
+    .header-carousel .owl-carousel-item {
+        height: 500px;
+        /* was max-height: 500px; */
+    }
+
+    .header-carousel .owl-carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* enables cropping */
+        /* object-position is supplied by your obj-bottom class */
+    }
+}
+
 /* Custom carousel border for static overlay */
 .carousel-border {
     position: relative;
@@ -306,6 +342,27 @@
     color: var(--light);
 }
 
+/* General Services image sizing: consistent aspect ratio */
+.service-item-top .overflow-hidden {
+    aspect-ratio: 4 / 3;
+    /* choose the ratio you prefer: 4/3, 16/9, etc. */
+    width: 100%;
+}
+
+.service-item-top .overflow-hidden img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* crops to fill without distortion */
+    display: block;
+}
+
+/* Optional: use a slightly taller crop on small screens */
+@media (max-width: 576px) {
+    .service-item-top .overflow-hidden {
+        aspect-ratio: 3 / 2;
+    }
+}
 
 /*** Facts ***/
 .fact {
@@ -346,6 +403,56 @@
     border-color: var(--primary);
 }
 
+/* Services pages images: uniform size */
+.service-page-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    /* adjust to 4/3 or 3/2 if you prefer */
+    object-fit: cover;
+    display: block;
+}
+
+/* Optional: taller crop on small screens */
+@media (max-width: 576px) {
+    .service-page-image {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* Fallback for older browsers */
+@supports not (aspect-ratio: 1 / 1) {
+    .service-page-image {
+        height: 320px;
+    }
+}
+
+/* Services tab images: uniform size */
+#services-tab-content img.img-fluid {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    /* adjust to 4/3 or 3/2 if you prefer */
+    object-fit: cover;
+    display: block;
+}
+
+/* Optional: taller crop on small screens */
+@media (max-width: 576px) {
+    #services-tab-content img.img-fluid {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* Fallback for older browsers */
+@supports not (aspect-ratio: 1 / 1) {
+    #services-tab-content img.img-fluid {
+        height: 320px;
+    }
+}
+
+.text-secondary i {
+    font-size: 1.5rem;
+    /* Adjust this value to match the h4 size */
+}
 
 /*** Booking ***/
 .video {
