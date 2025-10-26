@@ -18,6 +18,18 @@
     --dark: #17224D;
 }
 
+/* Scroll offset for section links to account for sticky navbar */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Offset for mobile */
+}
+
+@media (min-width: 992px) {
+    html {
+        scroll-padding-top: 160px; /* Offset for desktop (topbar + navbar) */
+    }
+}
+
 .fw-medium {
     font-weight: 600 !important;
 }
